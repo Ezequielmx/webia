@@ -3,7 +3,7 @@ import { ShieldCheck, Check, Sparkles, MessageCircle } from 'lucide-react';
 
 export default function RiskFreePilot() {
   const WHATSAPP_NUMBER = '5491131155986';
-  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('¡Hola! Quiero postular mi empresa al Piloto sin riesgo de 30 días.')}`;
+  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('¡Hola! Quiero postular mi empresa a la Prueba Gratis de 30 días.')}`;
 
   const steps = [
     {
@@ -41,7 +41,7 @@ export default function RiskFreePilot() {
             {/* Title */}
             <div className="space-y-2">
               <h2 className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-blue-900 tracking-tight leading-tight">
-                Te lo demostramos con un Piloto de 30 Días
+                Te lo demostramos con una <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-600 font-display">Prueba Gratis</span> de 30 Días
               </h2>
               <p className="font-sans text-sm sm:text-base text-slate-600 max-w-xl mx-auto leading-relaxed">
                 Queremos eliminar todo el miedo y la incertidumbre. Proba la tecnología en las operaciones reales de tu negocio antes de comprometer tu presupuesto.
@@ -92,7 +92,9 @@ export default function RiskFreePilot() {
 
               <div className="space-y-6 pt-2">
                 <div className="text-center space-y-1">
-                  <h3 className="font-display font-extrabold text-2xl text-slate-900">Plan Piloto sin Riesgo</h3>
+                  <h3 className="font-display font-extrabold text-2xl text-slate-900">
+                    Plan Prueba <span className="text-indigo-600 font-display">Gratis</span>
+                  </h3>
                   <p className="font-sans text-xs text-slate-500 max-w-xs mx-auto leading-normal">
                     Probás tu primer proceso automatizado durante 30 días sin pagar costos fijos iniciales.
                   </p>
