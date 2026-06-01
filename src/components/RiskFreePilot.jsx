@@ -85,9 +85,9 @@ export default function RiskFreePilot() {
             <div className="bg-white border-2 border-blue-600 rounded-[32px] p-6 sm:p-10 shadow-xl max-w-lg mx-auto relative flex flex-col justify-between scale-100 hover:scale-[1.01] transition-transform duration-200">
               
               {/* Premium Top Ribbon */}
-              <div className="absolute -top-4.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-[10px] font-extrabold px-5 py-1.5 rounded-full uppercase tracking-wider flex items-center gap-1.5 shadow-md">
-                <Sparkles className="h-3 w-3" />
-                <span>Cupos Limitados de Lanzamiento</span>
+              <div className="absolute -top-4.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-rose-500 via-orange-500 to-amber-500 text-white text-[11px] font-black px-6 py-2 rounded-full uppercase tracking-widest flex items-center gap-1.5 shadow-lg border border-white/20 animate-pulse">
+                <Sparkles className="h-3.5 w-3.5 fill-white" />
+                <span>Cupos Limitados</span>
               </div>
 
               <div className="space-y-6 pt-2">
