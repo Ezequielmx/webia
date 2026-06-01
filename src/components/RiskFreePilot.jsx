@@ -85,7 +85,7 @@ export default function RiskFreePilot() {
             <div className="bg-white border-2 border-blue-600 rounded-[32px] p-6 sm:p-10 shadow-xl max-w-lg mx-auto relative flex flex-col justify-between scale-100 hover:scale-[1.01] transition-transform duration-200">
               
               {/* Premium Top Ribbon */}
-              <div className="absolute -top-4.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-rose-500 via-orange-500 to-amber-500 text-white text-[11px] font-black px-6 py-2 rounded-full uppercase tracking-widest flex items-center gap-1.5 shadow-lg border border-white/20 animate-pulse">
+              <div className="absolute -top-4.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-[11px] font-black px-6 py-2 rounded-full uppercase tracking-widest flex items-center gap-1.5 shadow-md border border-white/10">
                 <Sparkles className="h-3.5 w-3.5 fill-white" />
                 <span>Cupos Limitados</span>
               </div>
@@ -106,7 +106,7 @@ export default function RiskFreePilot() {
                     <span className="font-sans text-sm text-slate-500 font-bold uppercase tracking-wider">de desarrollo</span>
                   </div>
                   <p className="font-sans text-[11px] text-blue-700 font-bold mt-2 px-3 py-1 bg-blue-100/60 rounded-lg text-center max-w-sm">
-                    * Solo pagás el consumo directo del servidor de la IA (aprox. $20 a $30 USD en todo el mes de prueba).
+                    * Solo pagás el consumo directo del servidor de la IA.
                   </p>
                 </div>
 
