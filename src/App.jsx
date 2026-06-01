@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MessageCircle } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import PainPoints from './components/PainPoints';
@@ -74,6 +75,20 @@ export default function App() {
 
       {/* Lead capture modal */}
       <ContactModal isOpen={isContactOpen} onClose={closeContact} />
+
+      {/* Floating WhatsApp Action Button */}
+      <a
+        href="https://wa.me/5491131155986?text=Hola!%20Quiero%20saber%20si%20aplica%20a%20mi%20empresa."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-200 group flex items-center gap-2 cursor-pointer border border-emerald-400/20"
+        aria-label="Contactar por WhatsApp"
+      >
+        <MessageCircle className="h-6 w-6 animate-pulse" />
+        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-out font-sans font-bold text-sm tracking-wide whitespace-nowrap">
+          ¿Dudas? Chateemos
+        </span>
+      </a>
 
     </div>
   );
