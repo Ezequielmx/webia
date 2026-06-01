@@ -1,7 +1,10 @@
 import React from 'react';
-import { ShieldCheck, Plus } from 'lucide-react';
+import { ShieldCheck, Check, Sparkles, MessageCircle } from 'lucide-react';
 
-export default function RiskFreePilot({ onOpenContact }) {
+export default function RiskFreePilot() {
+  const WHATSAPP_NUMBER = '5491131155986';
+  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('¡Hola! Quiero postular mi empresa al Piloto sin riesgo de 30 días.')}`;
+
   const steps = [
     {
       num: '1',
@@ -25,14 +28,14 @@ export default function RiskFreePilot({ onOpenContact }) {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Large Inner Card Container */}
-        <div className="bg-blue-50/70 border border-blue-100 rounded-[40px] p-8 md:p-16 space-y-12 shadow-sm">
+        <div className="bg-blue-50/60 border border-blue-100/60 rounded-[40px] p-8 md:p-14 lg:p-16 space-y-12 shadow-sm">
           
           {/* Header */}
           <div className="text-center space-y-4">
             
             {/* Trust Shield Icon */}
             <div className="mx-auto h-14 w-14 rounded-2xl bg-blue-100 text-blue-900 border border-blue-200 flex items-center justify-center shadow-xs">
-              <ShieldCheck className="h-7 w-7" />
+              <ShieldCheck className="h-7 w-7 animate-pulse" />
             </div>
 
             {/* Title */}
@@ -41,18 +44,18 @@ export default function RiskFreePilot({ onOpenContact }) {
                 Te lo demostramos con un Piloto de 30 Días
               </h2>
               <p className="font-sans text-sm sm:text-base text-slate-600 max-w-xl mx-auto leading-relaxed">
-                Queremos eliminar todo el miedo y la incertidumbre. Prueba la tecnología en las operaciones reales de tu negocio antes de comprometer tu presupuesto.
+                Queremos eliminar todo el miedo y la incertidumbre. Proba la tecnología en las operaciones reales de tu negocio antes de comprometer tu presupuesto.
               </p>
             </div>
 
           </div>
 
           {/* Three steps grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
             {steps.map((step, idx) => (
               <div 
                 key={idx} 
-                className="bg-white rounded-3xl p-6 md:p-8 border border-slate-150 shadow-xs flex flex-col space-y-4 relative overflow-hidden group hover:shadow-md transition-all duration-200"
+                className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-xs flex flex-col space-y-4 relative overflow-hidden group hover:shadow-md transition-all duration-200"
               >
                 {/* Visual Number Tag */}
                 <div className="h-10 w-10 rounded-full bg-blue-900 text-white font-display font-bold text-sm flex items-center justify-center shadow-sm">
@@ -77,14 +80,70 @@ export default function RiskFreePilot({ onOpenContact }) {
             ))}
           </div>
 
-          {/* Button CTA */}
-          <div className="text-center pt-4">
-            <button
-              onClick={onOpenContact}
-              className="w-full sm:w-auto bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-10 rounded-2xl text-sm sm:text-base transition-all duration-200 shadow-md hover:shadow-lg hover:scale-[1.02] cursor-pointer"
-            >
-              Quiero postular mi empresa al Piloto
-            </button>
+          {/* SINGLE INTEGRATED PILOT PRICING CARD */}
+          <div className="pt-6">
+            <div className="bg-white border-2 border-blue-600 rounded-[32px] p-6 sm:p-10 shadow-xl max-w-lg mx-auto relative flex flex-col justify-between scale-100 hover:scale-[1.01] transition-transform duration-200">
+              
+              {/* Premium Top Ribbon */}
+              <div className="absolute -top-4.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-[10px] font-extrabold px-5 py-1.5 rounded-full uppercase tracking-wider flex items-center gap-1.5 shadow-md">
+                <Sparkles className="h-3 w-3" />
+                <span>Cupos Limitados de Lanzamiento</span>
+              </div>
+
+              <div className="space-y-6 pt-2">
+                <div className="text-center space-y-1">
+                  <h3 className="font-display font-extrabold text-2xl text-slate-900">Plan Piloto sin Riesgo</h3>
+                  <p className="font-sans text-xs text-slate-500 max-w-xs mx-auto leading-normal">
+                    Probás tu primer proceso automatizado durante 30 días sin pagar costos fijos iniciales.
+                  </p>
+                </div>
+
+                <div className="flex flex-col items-center py-2 bg-blue-50/40 rounded-2xl border border-blue-50">
+                  <div className="flex items-baseline gap-1.5">
+                    <span className="font-display font-black text-5xl text-slate-900">$0</span>
+                    <span className="font-sans text-sm text-slate-500 font-bold uppercase tracking-wider">de desarrollo</span>
+                  </div>
+                  <p className="font-sans text-[11px] text-blue-700 font-bold mt-2 px-3 py-1 bg-blue-100/60 rounded-lg text-center max-w-sm">
+                    * Solo pagás el consumo directo del servidor de la IA (aprox. $20 a $30 USD en todo el mes de prueba).
+                  </p>
+                </div>
+
+                <hr className="border-slate-100" />
+
+                <ul className="space-y-3.5 text-sm text-slate-700 font-medium max-w-sm mx-auto">
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-indigo-500 shrink-0 mt-0.5" />
+                    <span>1 automatización completa (WhatsApp ➔ Planilla Excel)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-indigo-500 shrink-0 mt-0.5" />
+                    <span>Reunión de relevamiento y diseño a medida sin cargo</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-indigo-500 shrink-0 mt-0.5" />
+                    <span>Soporte prioritario del equipo de consultores</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-indigo-500 shrink-0 mt-0.5" />
+                    <span>Sin ataduras ni contratos de permanencia</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Direct WhatsApp Call to Action */}
+              <div className="pt-8">
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2.5 bg-blue-900 hover:bg-blue-800 text-white font-bold py-4.5 px-6 rounded-2xl text-sm sm:text-base transition-all duration-200 shadow-md hover:shadow-lg"
+                >
+                  <MessageCircle className="h-5 w-5 animate-pulse" />
+                  <span>Quiero postular mi empresa al Piloto</span>
+                </a>
+              </div>
+
+            </div>
           </div>
 
         </div>
