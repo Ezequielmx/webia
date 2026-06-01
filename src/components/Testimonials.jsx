@@ -4,7 +4,7 @@ import { Quote, Star } from 'lucide-react';
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: 'Teníamos a dos personas perdiendo toda la mañana cargando pedidos de WhatsApp a la planilla. Pusimos el piloto y ahora los pedidos entran solos al Excel y se autogenera la nota de venta. Es un viaje de ida.',
+      quote: 'Teníamos a dos personas perdiendo toda la mañana cargando pedidos de WhatsApp a la planilla. Empezamos con la prueba gratis y ahora los pedidos entran solos al Excel y se autogenera la nota de venta. Es un viaje de ida.',
       author: 'Gastón R.',
       company: 'Distribuidora de Alimentos',
       location: 'Buenos Aires',
@@ -33,7 +33,7 @@ export default function Testimonials() {
             Qué dicen los que ya lo probaron
           </h2>
           <p className="font-sans text-sm sm:text-base text-slate-500 max-w-xl mx-auto leading-relaxed">
-            Resultados reales obtenidos durante nuestros primeros pilotos cerrados con PyMEs locales.
+            Resultados reales obtenidos durante nuestras primeras pruebas gratis con PyMEs locales.
           </p>
         </div>
 

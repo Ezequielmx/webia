@@ -18,7 +18,7 @@ export default function FAQ() {
       a: 'Al contrario, lo van a amar. Les sacamos de encima el trabajo aburrido, monótono y repetitivo (copiar y pegar datos de correos, cruzar stock a mano, etc.) para que puedan enfocarse en tareas comerciales o de atención al cliente de mayor valor. Además, interactúan con la IA por WhatsApp, que ya todos saben usar sin capacitación.'
     },
     {
-      q: '¿Cuánto cuesta mantenerlo después del piloto?',
+      q: '¿Cuánto cuesta mantenerlo después de la Prueba Gratis?',
       a: 'El costo mensual se compone de un abono de soporte mínimo (desde $150 USD) y el consumo real de los servidores de la IA (que se paga a precio de coste y suele ser de centavos de dólar por cada chat o consulta procesada). Es una fracción mínima comparado con contratar un empleado administrativo nuevo.'
     },
     {

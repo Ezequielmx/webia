@@ -98,7 +98,7 @@ export default function DiagnosticTool({ onOpenContact }) {
     resultTitle = 'Oportunidad Crítica de Mejora';
     resultPercentage = 95;
     resultColor = 'text-amber-600 bg-amber-50 border-amber-200';
-    resultDescription = 'Tu negocio depende críticamente de tareas manuales repetitivas que desgastan a tu equipo. Automatizar la carga de datos, el seguimiento de cotizaciones pendientes o la consolidación de reportes liberará aproximadamente de 10 a 15 horas semanales de trabajo administrativo improductivo. ¡Sos el candidato ideal para el piloto sin riesgo!';
+    resultDescription = 'Tu negocio depende críticamente de tareas manuales repetitivas que desgastan a tu equipo. Automatizar la carga de datos, el seguimiento de cotizaciones pendientes o la consolidación de reportes liberará aproximadamente de 10 a 15 horas semanales de trabajo administrativo improductivo. ¡Sos el candidato ideal para la Prueba Gratis de 30 días!';
   } else if (totalScore >= 5) {
     resultTitle = 'Oportunidad Altamente Recomendada';
     resultPercentage = 68;
@@ -218,13 +218,15 @@ export default function DiagnosticTool({ onOpenContact }) {
 
             {/* Action buttons */}
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center items-center">
-              <button
-                onClick={onOpenContact}
-                className="w-full sm:w-auto bg-blue-900 hover:bg-blue-800 text-white font-bold py-3.5 px-6 rounded-xl text-sm transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+              <a
+                href="https://wa.me/5491131155986?text=Hola!%20Hice%20el%20diagn%C3%B3stico%20en%20la%20web%20y%20saqu%C3%A9%20un%20puntaje%20alto.%20Quiero%20postular%20mi%20Pyme%20a%20la%20Prueba%20Gratis."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex bg-blue-900 hover:bg-blue-800 text-white font-bold py-3.5 px-6 rounded-xl text-sm transition-all shadow-md hover:shadow-lg items-center justify-center gap-2 cursor-pointer"
               >
-                <span>Postular mi Pyme al Piloto de 30 Días</span>
+                <span>Postular mi Pyme a la Prueba Gratis</span>
                 <ArrowRight className="h-4 w-4" />
-              </button>
+              </a>
               <button
                 onClick={resetQuiz}
                 className="w-full sm:w-auto border border-slate-200 text-slate-600 hover:bg-slate-50 font-semibold py-3.5 px-6 rounded-xl text-sm transition-all cursor-pointer"
