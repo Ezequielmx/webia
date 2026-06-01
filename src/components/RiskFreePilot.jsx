@@ -141,7 +141,7 @@ export default function RiskFreePilot() {
                   className="w-full inline-flex items-center justify-center gap-2.5 bg-blue-900 hover:bg-blue-800 text-white font-bold py-4.5 px-6 rounded-2xl text-sm sm:text-base transition-all duration-200 shadow-md hover:shadow-lg"
                 >
                   <MessageCircle className="h-5 w-5 animate-pulse" />
-                  <span>Quiero postular mi empresa al Piloto</span>
+                  <span>Quiero mi Prueba Gratis</span>
                 </a>
               </div>
 
