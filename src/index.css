@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom styles for professional scroll behavior and animations */
+html {
+  scroll-behavior: smooth;
+}
+
+/* WhatsApp Pattern Background */
+.whatsapp-bg {
+  background-color: #e5ddd5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 0l40 40-40 40L0 40z' fill='%23ece5dd' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Micro-animations */
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-4px);
+  }
+}
+
+.animate-pulse-dot-1 {
+  animation: pulse-dot 1.2s infinite 0s;
+}
+
+.animate-pulse-dot-2 {
+  animation: pulse-dot 1.2s infinite 0.2s;
+}
+
+.animate-pulse-dot-3 {
+  animation: pulse-dot 1.2s infinite 0.4s;
+}
+
+/* Scrollbar styling for a clean desktop experience */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
