@@ -5,6 +5,10 @@ import PainPoints from './components/PainPoints';
 import HowItWorks from './components/HowItWorks';
 import DiagnosticTool from './components/DiagnosticTool';
 import RiskFreePilot from './components/RiskFreePilot';
+import Pricing from './components/Pricing';
+import Testimonials from './components/Testimonials';
+import Team from './components/Team';
+import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
@@ -27,13 +31,7 @@ export default function App() {
         {/* Hero Section */}
         <Hero onOpenContact={openContact} />
 
-        {/* Section 1: Dolores/Síntomas */}
-        <PainPoints />
-
-        {/* Section 2: Traducción y Simulador de WhatsApp */}
-        <HowItWorks />
-
-        {/* Interactive WOW Factor 2: Diagnostic Tool for SMEs */}
+        {/* Interactive WOW Factor 2: Diagnostic Tool for SMEs (Moved right after Hero!) */}
         <section className="py-20 bg-white relative border-b border-slate-100">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             <div className="text-center space-y-3">
@@ -49,10 +47,28 @@ export default function App() {
           </div>
         </section>
 
-        {/* Section 3: Oferta del Piloto sin Riesgo */}
+        {/* Section 1: Dolores/Síntomas */}
+        <PainPoints />
+
+        {/* Section 2: Traducción y Simulador de WhatsApp */}
+        <HowItWorks />
+
+        {/* Section 3: Precios Simples y Transparentes */}
+        <Pricing />
+
+        {/* Section 4: Oferta del Piloto sin Riesgo */}
         <RiskFreePilot onOpenContact={openContact} />
 
-        {/* Section 4: Final CTA con dudas y teléfono */}
+        {/* Section 5: Testimonios / Validación Social */}
+        <Testimonials />
+
+        {/* Section 6: Quiénes Somos / El Equipo */}
+        <Team />
+
+        {/* Section 7: FAQ / Preguntas Frecuentes */}
+        <FAQ />
+
+        {/* Section 8: Final CTA con dudas y teléfono */}
         <FinalCTA onOpenContact={openContact} />
 
       </main>

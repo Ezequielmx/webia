@@ -32,13 +32,15 @@ export default function FinalCTA({ onOpenContact }) {
 
         {/* CTA Button Rounded Full */}
         <div className="pt-4">
-          <button
-            onClick={onOpenContact}
-            className="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-full text-base transition-all duration-200 shadow-md hover:shadow-lg hover:scale-[1.02] flex items-center justify-center gap-2.5 mx-auto cursor-pointer"
+          <a
+            href="https://wa.me/5491131155986?text=Hola!%20Quiero%20agendar%20una%20charla%20gratuita%20de%2015%20minutos%20para%20mi%20empresa."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-full text-base transition-all duration-200 shadow-md hover:shadow-lg hover:scale-[1.02] items-center justify-center gap-2.5 mx-auto cursor-pointer"
           >
-            <PhoneCall className="h-5 w-5 text-blue-900" />
+            <PhoneCall className="h-5 w-5 text-blue-900 animate-pulse" />
             <span>Agendar charla gratuita</span>
-          </button>
+          </a>
         </div>
 
         {/* Extra guarantee tag */}
