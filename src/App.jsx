@@ -5,7 +5,6 @@ import PainPoints from './components/PainPoints';
 import HowItWorks from './components/HowItWorks';
 import DiagnosticTool from './components/DiagnosticTool';
 import RiskFreePilot from './components/RiskFreePilot';
-import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Team from './components/Team';
 import FAQ from './components/FAQ';
@@ -52,9 +51,6 @@ export default function App() {
 
         {/* Section 2: Traducción y Simulador de WhatsApp */}
         <HowItWorks />
-
-        {/* Section 3: Precios Simples y Transparentes */}
-        <Pricing />
 
         {/* Section 4: Oferta del Piloto sin Riesgo */}
         <RiskFreePilot onOpenContact={openContact} />
